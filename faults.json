@@ -1,0 +1,1850 @@
+[
+  {
+    "id": "msg-1",
+    "message": "A spurious FIRQ at card x",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "There is glitch on the MCC hardware that appears on the backplane / MCB.",
+    "possibleAction": "Clear and ignore single occurrence.",
+    "page": 93
+  },
+  {
+    "id": "msg-2",
+    "message": "A spurious IRQ at card x",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "There is glitch on the MCC / MCB hardware.",
+    "possibleAction": "Clear and ignore single occurrence.",
+    "page": 93
+  },
+  {
+    "id": "msg-3",
+    "message": "A spurious NMI at card x",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "There is glitch on the MCC / MCB hardware.",
+    "possibleAction": "Clear and ignore single occurrence.",
+    "page": 93
+  },
+  {
+    "id": "msg-4",
+    "message": "A spurious SWI2 at card x",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "There is glitch on the MCC hardware.",
+    "possibleAction": "Clear and ignore single occurrence.",
+    "page": 93
+  },
+  {
+    "id": "msg-5",
+    "message": "A spurious SWI3 at card x",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "There is glitch on the MCC / MCB hardware.",
+    "possibleAction": "Clear and ignore single occurrence.",
+    "page": 93
+  },
+  {
+    "id": "msg-6",
+    "message": "Access fault at card x",
+    "associatedWith": "Any Card",
+    "meaning": "Card cannot talk to the MCC / MCB local controller.",
+    "possibleAction": "Replace card if the fault keeps reoccurring. Could also be caused by excessive network messages. Investigate message passing.",
+    "page": 93
+  },
+  {
+    "id": "msg-7",
+    "message": "ACIA Failed at card x",
+    "associatedWith": "Network Card or MCC / MCB",
+    "meaning": "Communication chip failure or the FABs and SABs are corrupt.",
+    "possibleAction": "Reset the card and replace if it fault keeps reoccurring.",
+    "page": 93
+  },
+  {
+    "id": "msg-8",
+    "message": "Alarms silenced",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "Silence alarms button has been pressed.",
+    "possibleAction": "-",
+    "page": 93
+  },
+  {
+    "id": "msg-9",
+    "message": "Alarms sounded",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "Sound alarms button has been pressed.",
+    "possibleAction": "-",
+    "page": 94
+  },
+  {
+    "id": "msg-10",
+    "message": "Alarms Verified",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "Alarms verify button has been pressed.",
+    "possibleAction": "-",
+    "page": 94
+  },
+  {
+    "id": "msg-11",
+    "message": "Alarm Zone Disabled / Enabled at card x",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "-",
+    "possibleAction": "",
+    "page": 94
+  },
+  {
+    "id": "msg-12",
+    "message": "Allocation : Double Allocated card x number y on loop z",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Two devices are given the same address. Loop breaker (relay contacts) are fused ‘micro welded’ together (closed) or there is a bad connection.",
+    "possibleAction": "Check the device wiring. The device may be faulty, replace if required.",
+    "page": 94
+  },
+  {
+    "id": "msg-13",
+    "message": "Allocation : Hw fault card x number y on loop z",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Loop breaker relay has not closed or serial line End-2 is faulty or relay is stuck i.e. closed. The device may not be correctly fitted.",
+    "possibleAction": "Check the device wiring. The device may be faulty, replace if required.",
+    "page": 94
+  },
+  {
+    "id": "msg-14",
+    "message": "Allocation : Map error card x number y on loop z",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Loop wiring is incorrect, eg a sub loop may have been wired on a spur.",
+    "possibleAction": "Check and rewire if necessary. This fault can also be device failure.",
+    "page": 94
+  },
+  {
+    "id": "msg-15",
+    "message": "Allocation : memory Overflow at card x number y on loop z",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Loop processor has run out of memory during allocation / when starting a loop.",
+    "possibleAction": "Software error or more likely a faulty RAM chip.",
+    "page": 94
+  },
+  {
+    "id": "msg-16",
+    "message": "Allocation : not ready at card x",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "An attempt to allocate a loop when it is already allocating.",
+    "possibleAction": "Wait and if it takes longer than 10 minutes then reset the loop card.",
+    "page": 94
+  },
+  {
+    "id": "msg-17",
+    "message": "Allocation : OK at Card n : Allocated x",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "The loop circuit has been successfully allocated.",
+    "possibleAction": "-",
+    "page": 94
+  },
+  {
+    "id": "msg-18",
+    "message": "Allocation started from end 2 at card x",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "No devices found on End-1 or End 1 of the loop is open circuit.",
+    "possibleAction": "Check the wiring to the first device or last device on the loop.",
+    "page": 94
+  },
+  {
+    "id": "msg-19",
+    "message": "Allocation : Too many card x number y on loop z",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Allocated more than 200 devices or the device is restricted for use with the particular software version.",
+    "possibleAction": "Replace incompatible devices used on other systems ie:32000 or SMS device found in system.",
+    "page": 94
+  },
+  {
+    "id": "msg-20",
+    "message": "Allocation : Tx fault card x number y on loop z",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Invalid reply from the device.",
+    "possibleAction": "Check the device. Also check cable routing and length (measure resistance and capacitance of cable).",
+    "page": 94
+  },
+  {
+    "id": "msg-21",
+    "message": "ASCII Device is faulty number x on loop y",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Failure of the Control panel to communicate with Repeat / Mimic panel. The power supplies to these panels may not be connected.",
+    "possibleAction": "If applicable, connect the power supply or RESET the Master Repeat Card in the Repeat and Mimic panel. If necessary replace the card/software.",
+    "page": 95
+  },
+  {
+    "id": "msg-22",
+    "message": "Back up",
+    "associatedWith": "NVM (non volatile memory) on backplane or MCB",
+    "meaning": "Data is being copied from cards and stored onto the NVM.",
+    "possibleAction": "-",
+    "page": 95
+  },
+  {
+    "id": "msg-23",
+    "message": "Back up required",
+    "associatedWith": "NVM (non volatile memory) on backplane or MCB",
+    "meaning": "Data must be saved to memory",
+    "possibleAction": "Back up data to the memory.",
+    "page": 95
+  },
+  {
+    "id": "msg-24",
+    "message": "Battery discharged",
+    "associatedWith": "Power supply",
+    "meaning": "This indicates the failure of battery load test. The ADC value should be equal to or less than normal - 9.",
+    "possibleAction": "Check load test and the battery condition.",
+    "page": 95
+  },
+  {
+    "id": "msg-25",
+    "message": "Battery disconnected/ restored",
+    "associatedWith": "Power supply",
+    "meaning": "A disconnection is indicated when the ADC value from the battery is equal to or less than 130.",
+    "possibleAction": "Normally it should be = 234 (27.4V) To give a restored indication the ADC value should = Vbatt 1/6x256/5.",
+    "page": 95
+  },
+  {
+    "id": "msg-26",
+    "message": "Baud rate x at card y",
+    "associatedWith": "MCC / MCB / Network Card",
+    "meaning": "Baud rate set has been read.",
+    "possibleAction": "If required, change the baud rate.",
+    "page": 95
+  },
+  {
+    "id": "msg-27",
+    "message": "being Initialised at card x",
+    "associatedWith": "NVM (non volatile memory) on backplane or MCB",
+    "meaning": "Memory is being set up by the MCC / MCB (main control card/board), ready for use.",
+    "possibleAction": "-",
+    "page": 95
+  },
+  {
+    "id": "msg-28",
+    "message": "Buffer full at card x",
+    "associatedWith": "Any Card",
+    "meaning": "Software error.",
+    "possibleAction": "-",
+    "page": 95
+  },
+  {
+    "id": "msg-29",
+    "message": "Buffers out of step at card x",
+    "associatedWith": "Any Card",
+    "meaning": "Software error.",
+    "possibleAction": "Software errors will activate a system reset. Ignore single occurrence. Record the event in the log book.",
+    "page": 95
+  },
+  {
+    "id": "msg-30",
+    "message": "Call point glass is broken number x loop y",
+    "associatedWith": "Device",
+    "meaning": "Call point has been operated when the device is disabled.",
+    "possibleAction": "Replace the glass, if necessary.",
+    "page": 95
+  },
+  {
+    "id": "msg-31",
+    "message": "Call point on interface unit operated / restored",
+    "associatedWith": "Device",
+    "meaning": "Mains powered interface input has been triggered by conventional MCP, value of input is equal to or less than 6V.",
+    "possibleAction": "-",
+    "page": 95
+  },
+  {
+    "id": "msg-32",
+    "message": "Call point open cct number x on loop y",
+    "associatedWith": "Device",
+    "meaning": "Monitored base does not see end-of-line unit. There is a bad connection in MCP.",
+    "possibleAction": "Check the internal wiring, there may be a loose connection.",
+    "page": 96
+  },
+  {
+    "id": "msg-33",
+    "message": "Call point operated/restored number x loop y",
+    "associatedWith": "Device",
+    "meaning": "Break glass has been broken or operated with a test key.",
+    "possibleAction": "Replace the break glass to restore the call point or remove the test key, whichever is applicable.",
+    "page": 96
+  },
+  {
+    "id": "msg-34",
+    "message": "Call point short cct number x loop y",
+    "associatedWith": "Device",
+    "meaning": "Call point contacts are short circuit.",
+    "possibleAction": "Check the call point contacts and internal wiring.",
+    "page": 96
+  },
+  {
+    "id": "msg-35",
+    "message": "Card found/lost at card x",
+    "associatedWith": "Any Card",
+    "meaning": "The card has been found/lost. If lost then it is locked out.",
+    "possibleAction": "There may be a hardware fault on card or backplane. Investigate and rectify.",
+    "page": 96
+  },
+  {
+    "id": "msg-36",
+    "message": "Card n recovered /Card n backed up",
+    "associatedWith": "NVM (non volatile memory) on backplane or MCB",
+    "meaning": "Data recovered to a card from the NVM. A card data has been backed up to the NVM.",
+    "possibleAction": "-",
+    "page": 96
+  },
+  {
+    "id": "msg-37",
+    "message": "Chamber Removed /Replaced number x on loop y",
+    "associatedWith": "Device",
+    "meaning": "Device chamber has been removed.",
+    "possibleAction": "Replacing the chamber will cause a replaced indication.",
+    "page": 96
+  },
+  {
+    "id": "msg-38",
+    "message": "Charger Fault",
+    "associatedWith": "Panel Power Supply Unit (PSU)",
+    "meaning": "Charger circuit has failed.",
+    "possibleAction": "Replace the PSU.",
+    "page": 96
+  },
+  {
+    "id": "msg-39",
+    "message": "Charger Fault number x on loop y",
+    "associatedWith": "EN54 System device power supply (Repeat, Mimic or mains powered interface)",
+    "meaning": "Charger circuit has failed at a loop device.",
+    "possibleAction": "Replace the board (having the power supply) on the loop device.",
+    "page": 96
+  },
+  {
+    "id": "msg-40",
+    "message": "Charger Restored",
+    "associatedWith": "Panel power supply",
+    "meaning": "Charger circuit is working again.",
+    "possibleAction": "-",
+    "page": 96
+  },
+  {
+    "id": "msg-41",
+    "message": "Charger Restored number x on loop y",
+    "associatedWith": "EN54 System device power supply (Repeat, Mimic or mains powered interface).",
+    "meaning": "Charger circuit at the loop device is working again.",
+    "possibleAction": "-",
+    "page": 96
+  },
+  {
+    "id": "msg-42",
+    "message": "Chk=4.874 NVMC 41874 Flag=0 NVM is write protected at Card x",
+    "associatedWith": "NVM (non volatile memory) on backplane or MCB",
+    "meaning": "The memory is read only.",
+    "possibleAction": "Disable the write protect using the [set up] menu.",
+    "page": 96
+  },
+  {
+    "id": "msg-43",
+    "message": "Clock changed / Clock not set up",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "Time and date has been altered or no time has been entered.",
+    "possibleAction": "If necessary, set the clock using the set up menu.",
+    "page": 97
+  },
+  {
+    "id": "msg-44",
+    "message": "CO sensor faulty",
+    "associatedWith": "Device",
+    "meaning": "There is a fault with the CO sensor in an S-Quad.",
+    "possibleAction": "Replace device",
+    "page": 97
+  },
+  {
+    "id": "msg-45",
+    "message": "CO sensor near end of life",
+    "associatedWith": "Device",
+    "meaning": "The CO cell is nearing the end manufacturer recommended life expectancy in an S-Quad.",
+    "possibleAction": "Replace the device",
+    "page": 97
+  },
+  {
+    "id": "msg-46",
+    "message": "CO sensor restored",
+    "associatedWith": "Device",
+    "meaning": "The CO sensor fault has been restored in an S-Quad",
+    "possibleAction": "-",
+    "page": 97
+  },
+  {
+    "id": "msg-47",
+    "message": "Command build activated / deactivated",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "Command build has been switched ON (activated) or switched OFF (deactivated).",
+    "possibleAction": "If necessary switch ON/OFF the command build using the [control] menu.",
+    "page": 97
+  },
+  {
+    "id": "msg-48",
+    "message": "Command build enabled / disabled",
+    "associatedWith": "MCC /MCB (main control card/board)",
+    "meaning": "This is an automatic or manually controlled action.",
+    "possibleAction": "If necessary, manually enable/disable the command build using the [control] menu.",
+    "page": 97
+  },
+  {
+    "id": "msg-49",
+    "message": "Comms enabled / disabled at card x",
+    "associatedWith": "MCC / MCB (main control card/board) Network Card",
+    "meaning": "Card communications have been enabled or disabled. Control panel has been isolated from the network.",
+    "possibleAction": "If necessary, manually enable/disable the Comms using the [control] menu",
+    "page": 97
+  },
+  {
+    "id": "msg-50",
+    "message": "Comms Supply Fault",
+    "associatedWith": "Network node",
+    "meaning": "The communications power supply has failed.",
+    "possibleAction": "Replace the power supply unit.",
+    "page": 97
+  },
+  {
+    "id": "msg-51",
+    "message": "Comms supply Restored",
+    "associatedWith": "Network node",
+    "meaning": "The communications power supply has been restored.",
+    "possibleAction": "-",
+    "page": 97
+  },
+  {
+    "id": "msg-52",
+    "message": "Communications started / stopped at card x",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "Communication to a particular panel or to external equipment linked to the panel (eg Laptop having the commissioning tool) has started / stopped.",
+    "possibleAction": "Check the wiring.",
+    "page": 97
+  },
+  {
+    "id": "msg-53",
+    "message": "Control passed at card x",
+    "associatedWith": "Network",
+    "meaning": "-",
+    "possibleAction": "-",
+    "page": 97
+  },
+  {
+    "id": "msg-54",
+    "message": "Corrupted NVM memory at card x",
+    "associatedWith": "Any Card",
+    "meaning": "Checksum failure on configuration at midnight.",
+    "possibleAction": "Recover data and record event in the log book. If it reoccurs then replace the card.",
+    "page": 97
+  },
+  {
+    "id": "msg-55",
+    "message": "DC Power fail / restored",
+    "associatedWith": "Power supply",
+    "meaning": "The ADC of output 27V regulator is normally=146(28.5V).",
+    "possibleAction": "-",
+    "page": 97
+  },
+  {
+    "id": "msg-56",
+    "message": "DC too high / DC too low",
+    "associatedWith": "Power supply",
+    "meaning": "The DC supply is: Too high if greater than 164 (32V) Too low if less than 102 (20V)",
+    "possibleAction": "Check the mains supply and battery wiring.",
+    "page": 98
+  },
+  {
+    "id": "msg-57",
+    "message": "Delay block setup",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "A Delay Block has been configured.",
+    "possibleAction": "-",
+    "page": 98
+  },
+  {
+    "id": "msg-58",
+    "message": "Delay blocks Cleared",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "-",
+    "possibleAction": "-",
+    "page": 98
+  },
+  {
+    "id": "msg-59",
+    "message": "Detection Zone Disabled/Enabled at card x",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "The detection zone has been enabled or disabled automatically or manually.",
+    "possibleAction": "If necessary, manually enable/disable the detection zone using the [control] menu.",
+    "page": 98
+  },
+  {
+    "id": "msg-60",
+    "message": "Detector on interface unit number x on loop y channel z",
+    "associatedWith": "Device",
+    "meaning": "Conventional detector connected to an input of a mains powered interface input has triggered. Value of the input is equal to or less than 10V.",
+    "possibleAction": "-",
+    "page": 98
+  },
+  {
+    "id": "msg-61",
+    "message": "Device Address changed from x number y on loop z",
+    "associatedWith": "Device",
+    "meaning": "Device SAFE address has changed.",
+    "possibleAction": "If necessary rectify the device SAFE address.",
+    "page": 98
+  },
+  {
+    "id": "msg-62",
+    "message": "Device Battery Fault",
+    "associatedWith": "Radio (Plexus) Device",
+    "meaning": "Radio (Plexus) device has a battery failure",
+    "possibleAction": "Check the batteries at the Radio (Plexus) device using the Battery Condition Indicator tool and replace the batteries if necessary",
+    "page": 98
+  },
+  {
+    "id": "msg-63",
+    "message": "Device batteries need replacing",
+    "associatedWith": "Radio (Plexus) Device",
+    "meaning": "The batteries inside a Radio (Plexus) device needs to be replaced",
+    "possibleAction": "Replace the batteries in the Radio (Plexus) device",
+    "page": 98
+  },
+  {
+    "id": "msg-64",
+    "message": "Device battery discharged",
+    "associatedWith": "Radio (Plexus) Device",
+    "meaning": "The batteries inside a Radio (Plexus) device are nearing end of life.",
+    "possibleAction": "Replace the batteries in the Radio (Plexus) device",
+    "page": 98
+  },
+  {
+    "id": "msg-65",
+    "message": "Device battery fault /restored",
+    "associatedWith": "Device",
+    "meaning": "The battery has failed the load test at the device, for a mains powered interface the value is equal to or less than normal - 2V.",
+    "possibleAction": "Check and replace the battery if necessary.",
+    "page": 98
+  },
+  {
+    "id": "msg-66",
+    "message": "Device Battery OC number x on loop y",
+    "associatedWith": "Device",
+    "meaning": "Failure of fuse or battery wiring is OC on products like mains powered interface unit. Normal value = 27.4V Value is equal to or less than 16V (OC) / greater than 17V (Restored).",
+    "possibleAction": "Check and replace if necessary to restore.",
+    "page": 99
+  },
+  {
+    "id": "msg-67",
+    "message": "Device Enabled / Disabled at Card x",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Device has been enabled or disabled manually or automatically.",
+    "possibleAction": "If necessary manually enable or disable the device.",
+    "page": 99
+  },
+  {
+    "id": "msg-68",
+    "message": "Device Fault number x on loop y",
+    "associatedWith": "ACU Audio Control Unit",
+    "meaning": "Fault input has been asserted.",
+    "possibleAction": "Check remote equipment wired to the fault input.",
+    "page": 99
+  },
+  {
+    "id": "msg-69",
+    "message": "Device Gain set to x number y on loop z",
+    "associatedWith": "Beam devices (can also be a Flame device - no longer supported)",
+    "meaning": "Confirmation of a change in gain setting.",
+    "possibleAction": "-",
+    "page": 99
+  },
+  {
+    "id": "msg-70",
+    "message": "Device inoperative",
+    "associatedWith": "Radio (Plexus) Device",
+    "meaning": "The Radio (Plexus) device batteries are too low for device to operate correctly",
+    "possibleAction": "Use the Battery Condition Indicator tool to determine if the batteries in the Radio (Plexus) Device require replacing, if necessary replace the batteries.",
+    "page": 99
+  },
+  {
+    "id": "msg-71",
+    "message": "Device Mains Failed / Restored number x loop y",
+    "associatedWith": "Device",
+    "meaning": "Failure of mains supply to mimic/repeat /mains powered interface unit. The value of rectified DC is equal to or less than 8V i.e. failed.",
+    "possibleAction": "Check mains supply connections and the mains fuse. When the rectified DC is greater than 24V it is restored.",
+    "page": 99
+  },
+  {
+    "id": "msg-72",
+    "message": "Device Mains too high / low number x loop y",
+    "associatedWith": "Devices like: Mimic / Repeat / Mains powered interface unit",
+    "meaning": "Failure of device mains supply. The value of rectified DC is too high / low i.e in the region of 30V / 17V.",
+    "possibleAction": "Check the power supply and replace it if necessary",
+    "page": 99
+  },
+  {
+    "id": "msg-73",
+    "message": "Device Moved",
+    "associatedWith": "Radio (Plexus) Device",
+    "meaning": "The Radio (Plexus) device has been tampered with",
+    "possibleAction": "The Radio (Plexus) device has been moved from the original installed lobation or there has been changes in the area that affect the device operation.",
+    "page": 99
+  },
+  {
+    "id": "msg-74",
+    "message": "Device power Fault / Restored number x on loop y",
+    "associatedWith": "Device",
+    "meaning": "The failure of internal power supply rail.",
+    "possibleAction": "Replace the device.",
+    "page": 99
+  },
+  {
+    "id": "msg-75",
+    "message": "Device power too high/ restored too low /restored number x on loop y",
+    "associatedWith": "Device",
+    "meaning": "Internal power rail of mains powered interface unit has a value of rectified DC equal to or greater than 32V (high) / less than 30V (restored) DC equal to or less than 24V (low) / greater than 26V (restored)",
+    "possibleAction": "Replace the device",
+    "page": 100
+  },
+  {
+    "id": "msg-76",
+    "message": "Device Replaced is faulty number x on Loop y",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Tx fault re-finding device.",
+    "possibleAction": "Check connections to device / base and also device type etc.",
+    "page": 100
+  },
+  {
+    "id": "msg-77",
+    "message": "Device Replaced number x loop y",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "The replaced device is now communicating with the panel.",
+    "possibleAction": "-",
+    "page": 100
+  },
+  {
+    "id": "msg-78",
+    "message": "Device Returned",
+    "associatedWith": "Radio (Plexus) Device",
+    "meaning": "Radio device has been returned to it's base",
+    "possibleAction": "The moved Radio (Plexus) Device has been returned to its original installed position.",
+    "page": 100
+  },
+  {
+    "id": "msg-79",
+    "message": "Device soft address; SAFE: number x on loop y",
+    "associatedWith": "Device",
+    "meaning": "Device primary address does not match SAFE address.",
+    "possibleAction": "Check loop configuration.",
+    "page": 100
+  },
+  {
+    "id": "msg-80",
+    "message": "Disables Cleared",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "All disablements have been removed from the panel.",
+    "possibleAction": "-",
+    "page": 100
+  },
+  {
+    "id": "msg-81",
+    "message": "Duplicate SAFE Address error: number x on loop y",
+    "associatedWith": "Device",
+    "meaning": "Two devices on a loop have the same SAFE address.",
+    "possibleAction": "Change one of the SAFE address.",
+    "page": 100
+  },
+  {
+    "id": "msg-82",
+    "message": "Earth Fault/ Fault Cleared",
+    "associatedWith": "Power supply",
+    "meaning": "The ADC value to earth of the 8V regulator: is equal to or greater than 5 (for a +ve fault) or less than 3 ( for a -ve fault).",
+    "possibleAction": "A clear indication is normally given when ADC is equal to 64.",
+    "page": 100
+  },
+  {
+    "id": "msg-83",
+    "message": "Earth Fault at Card n Loop n: 0v resistance is xxR, L is y Loop n: Earth is aaa, bbb (99)",
+    "associatedWith": "LPC (2Km Loop Processor Card)",
+    "meaning": "There is an earth fault present before allocation. Note: An Earth fault post allocation is indicated as Earth fault.",
+    "possibleAction": "Use the Loop Diagnostic Tool to diagnose the earth fault condition and rectify it.",
+    "page": 100
+  },
+  {
+    "id": "msg-84",
+    "message": "Enabled Aux relay x Disabled Aux relay x",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "The auxiliary relay has been enabled or disabled automatically or manually.",
+    "possibleAction": "If necessary, manually enable/disable the auxiliary relays using the [control] menu.",
+    "page": 100
+  },
+  {
+    "id": "msg-85",
+    "message": "End switching normal at card x",
+    "associatedWith": "Network",
+    "meaning": "Network card is back to normal operation, (see also end switching disabled)",
+    "possibleAction": "-",
+    "page": 101
+  },
+  {
+    "id": "msg-86",
+    "message": "Exception number x on loop y",
+    "associatedWith": "(Exceptions also referred to as Sub-Fault) Loop Processor Card",
+    "meaning": "Change noted in the environment of the device",
+    "possibleAction": "Check the condition codes.",
+    "page": 101
+  },
+  {
+    "id": "msg-87",
+    "message": "Excessive transmission error rate Too many errors: lost device or loop split",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "There were more than 10 reply errors in one day. (More than 16 reply errors will cause the device isolation.)",
+    "possibleAction": "Check screening and electrical noise in area of operation + check loose connections to loop.",
+    "page": 101
+  },
+  {
+    "id": "msg-88",
+    "message": "External Fire at panel n",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "There is a Fire on another panel in a network.",
+    "possibleAction": "Investigate the fire.",
+    "page": 101
+  },
+  {
+    "id": "msg-89",
+    "message": "FARE Enabled / Disabled number z on loop y Zone x",
+    "associatedWith": "Device",
+    "meaning": "The FARE device has been enabled or disabled manually or automatically.",
+    "possibleAction": "Manually enable or disable the FARE device if required.",
+    "page": 101
+  },
+  {
+    "id": "msg-90",
+    "message": "FARE Activated / Deactivated number z on loop y zone x",
+    "associatedWith": "Device",
+    "meaning": "The FARE device has been activated / deactivated manually or automatically.",
+    "possibleAction": "If appropriate manually deactivate the FARE device. The deactivation happens automatically on resetting the system after a fire event.",
+    "page": 101
+  },
+  {
+    "id": "msg-91",
+    "message": "FARE Faulty/Restored number x loop y zone w",
+    "associatedWith": "Device",
+    "meaning": "A 'faulty' message is given when there is a fault associated with FARE equipment.",
+    "possibleAction": "A 'restored' message is given when the FARE equipment fault is investigated and rectified.",
+    "page": 101
+  },
+  {
+    "id": "msg-92",
+    "message": "FARE loop x, device y",
+    "associatedWith": "Device",
+    "meaning": "This information shows the FARE Interface is on loop x and is device y.",
+    "possibleAction": "-",
+    "page": 101
+  },
+  {
+    "id": "msg-93",
+    "message": "Fast scan started number x on loop y channel z",
+    "associatedWith": "Data logging",
+    "meaning": "Fire sensor has detected a change on its input.",
+    "possibleAction": "The message is normally given when the data logger is connected.",
+    "page": 101
+  },
+  {
+    "id": "msg-94",
+    "message": "Fault cleared Warning cleared",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "Fault or warning has now gone.",
+    "possibleAction": "-",
+    "page": 101
+  },
+  {
+    "id": "msg-95",
+    "message": "Fire number n loop y channel z",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Pattern match is equal to a Fire or MCP operated or conventional detection on IO line of interface operated.",
+    "possibleAction": "-",
+    "page": 102
+  },
+  {
+    "id": "msg-96",
+    "message": "Fire reset",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "The Fire reset button has been pressed.",
+    "possibleAction": "-",
+    "page": 102
+  },
+  {
+    "id": "msg-97",
+    "message": "Flash memory checksum error",
+    "associatedWith": "Device",
+    "meaning": "Speech Memory Checksum Error",
+    "possibleAction": "Replace the device",
+    "page": 102
+  },
+  {
+    "id": "msg-98",
+    "message": "FPE Enabled / Disabled at card x",
+    "associatedWith": "Device",
+    "meaning": "All FPE Interface devices on loop x have been enabled or disabled manually or automatically.",
+    "possibleAction": "Manually enable or disable all FPE Interface devices if required.",
+    "page": 102
+  },
+  {
+    "id": "msg-99",
+    "message": "FPE w: x, y, z",
+    "associatedWith": "Device",
+    "meaning": "This information shows the FPE Interfaces on loop w and are devices x, y and z.",
+    "possibleAction": "-",
+    "page": 102
+  },
+  {
+    "id": "msg-100",
+    "message": "Full keyboard Removed / Fitted number x loop y",
+    "associatedWith": "MCC/ MCB / DAC/ MRC",
+    "meaning": "The keyboard has been ‘removed’ (is not fitted).",
+    "possibleAction": "Check the cable connections to the keyboard to bring about the ‘fitted’ message.",
+    "page": 102
+  },
+  {
+    "id": "msg-101",
+    "message": "Group Enabled / Disabled",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "A group has been automatically or manually disabled or enabled.",
+    "possibleAction": "If necessary, manually enable/disable the group using the [control] menu.",
+    "page": 102
+  },
+  {
+    "id": "msg-102",
+    "message": "High Error rate at Card x",
+    "associatedWith": "Network",
+    "meaning": "High number of communication errors.",
+    "possibleAction": "Check network wiring and connections.",
+    "page": 102
+  },
+  {
+    "id": "msg-103",
+    "message": "Incompatible Card Version at card x",
+    "associatedWith": "Any Card",
+    "meaning": "There is a card software conflict.",
+    "possibleAction": "Fit card with compatible software.",
+    "page": 102
+  },
+  {
+    "id": "msg-104",
+    "message": "Interface Failed at card x",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "The interface timer chip has failed.",
+    "possibleAction": "Clear the fault and ignore single occurrence. Replace the card on multiple failures.",
+    "page": 102
+  },
+  {
+    "id": "msg-105",
+    "message": "Interface input - fault / restored number x on loop y channel z",
+    "associatedWith": "Device",
+    "meaning": "IO line fault.",
+    "possibleAction": "Check the wiring and restore the input for normal operation.",
+    "page": 102
+  },
+  {
+    "id": "msg-106",
+    "message": "Interface Input Fire number x on loop y channel z",
+    "associatedWith": "Device",
+    "meaning": "Interface IO line triggered a fire event.",
+    "possibleAction": "Check the wiring and restore the input for normal operation.",
+    "page": 102
+  },
+  {
+    "id": "msg-107",
+    "message": "Interface input not Reset number x on loop y channel z",
+    "associatedWith": "Device",
+    "meaning": "The input line continues to trigger.",
+    "possibleAction": "Check devices on the IO line.",
+    "page": 103
+  },
+  {
+    "id": "msg-108",
+    "message": "Interface Input OC / restored",
+    "associatedWith": "Device",
+    "meaning": "The end-of-line is not seen.",
+    "possibleAction": "Check the wiring. The device may have been removed, if so refit the device to restore.",
+    "page": 103
+  },
+  {
+    "id": "msg-109",
+    "message": "Interface input operated / released number x on loop y channel z",
+    "associatedWith": "Device",
+    "meaning": "Fixed extinguishant interface unit input has been triggered (applicable for old systems only).",
+    "possibleAction": "Follow the FE system reset procedure to release the input.",
+    "page": 103
+  },
+  {
+    "id": "msg-110",
+    "message": "Interface input SC / restored number x on loop y channel z",
+    "associatedWith": "Device",
+    "meaning": "The interface wiring is short circuit. The value of input is equal to or less than 2V.",
+    "possibleAction": "Check the interface wiring and rectify to restore the input.",
+    "page": 103
+  },
+  {
+    "id": "msg-111",
+    "message": "Interface output SC or OC or Restored number x on loop y channel y",
+    "associatedWith": "Device",
+    "meaning": "The value of output is equal to or less than 50% for SC or is TBA for OC.",
+    "possibleAction": "Check the wiring and restore the output circuit.",
+    "page": 103
+  },
+  {
+    "id": "msg-112",
+    "message": "Intermittent Fault at card x",
+    "associatedWith": "Any Card",
+    "meaning": "A fault has been picked up by the MCC / MCB (main control card/board).",
+    "possibleAction": "Replace the appropriate card if the fault keeps reoccurring.",
+    "page": 103
+  },
+  {
+    "id": "msg-113",
+    "message": "Invalid configuration",
+    "associatedWith": "LPC (loop processor card) Device",
+    "meaning": "Loop recovered with freeblocks ON. FLASH incorrectly programmed",
+    "possibleAction": "This is not allowed. Switch OFF the freeblocks and reallocate. Replace the device",
+    "page": 103
+  },
+  {
+    "id": "msg-114",
+    "message": "Invalid configuration at card x",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Loop recovered with freeblocks ON or Loop configuration faulty, possibly after upload from Commissioning Tool.",
+    "possibleAction": "This is not allowed. Switch OFF the freeblocks and reallocate.",
+    "page": 103
+  },
+  {
+    "id": "msg-115",
+    "message": "Invalid message / reply received at card x",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "The message/reply received cannot be understood. The communication can be from a Repeat, Mimic, Networked system.",
+    "possibleAction": "Ignore single occurrence and record in the log book.",
+    "page": 103
+  },
+  {
+    "id": "msg-116",
+    "message": "Invalid message/reply at card x",
+    "associatedWith": "Network Card",
+    "meaning": "The message/reply has not been understood from other panels.",
+    "possibleAction": "Ignore for single occurrence and record in the log book.",
+    "page": 103
+  },
+  {
+    "id": "msg-117",
+    "message": "Invalid task delay at card x",
+    "associatedWith": "Any Card",
+    "meaning": "Software error.",
+    "possibleAction": "Software errors will activate a system reset. Ignore single occurrence. Record the event in the log book.",
+    "page": 104
+  },
+  {
+    "id": "msg-118",
+    "message": "Invalid task stage",
+    "associatedWith": "Any Card",
+    "meaning": "Software error.",
+    "possibleAction": "Software errors will activate a system reset. Ignore single occurrence. Record the event in the log book.",
+    "page": 104
+  },
+  {
+    "id": "msg-119",
+    "message": "IO line Enabled / Disabled at card x",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "The IO line is either enabled or disabled automatically or manually.",
+    "possibleAction": "If necessary, manually enable/disable the IO line using the [control] menu.",
+    "page": 104
+  },
+  {
+    "id": "msg-120",
+    "message": "Loop map has changed card x",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "The map is different to that previously allocated.",
+    "possibleAction": "Check and confirm difference with backup map.",
+    "page": 104
+  },
+  {
+    "id": "msg-121",
+    "message": "Loop n: High resistance",
+    "associatedWith": "LPC (2Km Loop Processor Card)",
+    "meaning": "High resistance on both lines.",
+    "possibleAction": "Use the Loop Diagnostic Tool to diagnose the cause of high resistance on the loop and rectify it.",
+    "page": 104
+  },
+  {
+    "id": "msg-122",
+    "message": "Loop n: High resistance on negative line",
+    "associatedWith": "LPC (2Km Loop Processor Card)",
+    "meaning": "High resistance on 0v lines.",
+    "possibleAction": "Use the Loop Diagnostic Tool to diagnose the cause of high resistance on the negative line and rectify it.",
+    "page": 104
+  },
+  {
+    "id": "msg-123",
+    "message": "Loop n: Overloaded",
+    "associatedWith": "LPC (2Km Loop Processor Card)",
+    "meaning": "The loop is overloaded, ie is taking too much current.",
+    "possibleAction": "Use the Loop Diagnostic Tool to diagnose the fault condition and rectify it.",
+    "page": 104
+  },
+  {
+    "id": "msg-124",
+    "message": "Loop n: Reply marginal",
+    "associatedWith": "LPC (2Km Loop Processor Card)",
+    "meaning": "The named device is at the marginal limits of correct communications (timing or level)",
+    "possibleAction": "Use the Loop Diagnostic Tool to diagnose the cause of communication issue and rectify it.",
+    "page": 104
+  },
+  {
+    "id": "msg-125",
+    "message": "Loop power restored",
+    "associatedWith": "Power supply",
+    "meaning": "Normal loop supply restored: Normal ADC = 202 (44V). Value = Vsupp x 1/11X256/5.",
+    "possibleAction": "-",
+    "page": 104
+  },
+  {
+    "id": "msg-126",
+    "message": "Loop Started not ready at card x number y loop z",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "As per message.",
+    "possibleAction": "Wait and if it takes longer than 10 minutes then reset the loop card.",
+    "page": 104
+  },
+  {
+    "id": "msg-127",
+    "message": "Loop stopped at Card x",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "The loop has been aborted or is still being allocated.",
+    "possibleAction": "Re-allocate the loop.",
+    "page": 104
+  },
+  {
+    "id": "msg-128",
+    "message": "Loop voltage too high/low",
+    "associatedWith": "Power supply",
+    "meaning": "The ADC value too high. or The ADC value is too low.",
+    "possibleAction": "Check PSU values in the [test/eng] menu, normal reading is 221. Check fuses and replace PSU if necessary.",
+    "page": 105
+  },
+  {
+    "id": "msg-129",
+    "message": "Lost Command number x Loop y",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Lost FAB/SAB.",
+    "possibleAction": "Ignore single occurrence and record in the log book.",
+    "page": 105
+  },
+  {
+    "id": "msg-130",
+    "message": "Lost Device number x on loop y",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "There is no reply on ends 1&2 of the device.",
+    "possibleAction": "Check the device connections.",
+    "page": 105
+  },
+  {
+    "id": "msg-131",
+    "message": "Lost slave Device number x on loop y",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "There is no reply on ends 1&2 of the device.",
+    "possibleAction": "Check the slave device connections and replace if necessary.",
+    "page": 105
+  },
+  {
+    "id": "msg-132",
+    "message": "Magnetic switch operated number x loop y",
+    "associatedWith": "Device",
+    "meaning": "The reset switch in the base has closed for 3400 devices only.",
+    "possibleAction": "Check base and proximity of magnetic field.",
+    "page": 105
+  },
+  {
+    "id": "msg-133",
+    "message": "Main program not running at card x",
+    "associatedWith": "Any Card",
+    "meaning": "Problem with software. The watchdog will operate the MCC / MCB (main control card/board).",
+    "possibleAction": "Software errors will activate a system reset. Ignore single occurrence. Record event in the log book.",
+    "page": 105
+  },
+  {
+    "id": "msg-134",
+    "message": "Mains failed / restored",
+    "associatedWith": "Power supply",
+    "meaning": "Failure is detected when the ADC output from the rectifier is equal to or less than 105.",
+    "possibleAction": "Check mains and fuse. Replace PSU if necessary. This should normally equal to 60V to get a restored message.",
+    "page": 105
+  },
+  {
+    "id": "msg-135",
+    "message": "Mains too high",
+    "associatedWith": "Power supply",
+    "meaning": "The ADC value is too high.",
+    "possibleAction": "Check the PSU values in the [test eng] menu. Replace PSU if necessary.",
+    "page": 105
+  },
+  {
+    "id": "msg-136",
+    "message": "Mains too low",
+    "associatedWith": "Power supply",
+    "meaning": "Mains supply is too low.",
+    "possibleAction": "Replace PSU if necessary.",
+    "page": 105
+  },
+  {
+    "id": "msg-137",
+    "message": "Master alarm oc or sc Restored",
+    "associatedWith": "Power supply",
+    "meaning": "No end-of-line unit seen. ADC value is greater than 92 or ADC value is less than 37 ADC value is 74",
+    "possibleAction": "Check the wiring to the master alarm circuits. Ensure EOLs are connected inside the control panel if master alarm circuits are not used.",
+    "page": 105
+  },
+  {
+    "id": "msg-138",
+    "message": "Master alarm enabled/disabled",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "The master alarm has been enabled or disabled automatically or manually.",
+    "possibleAction": "If necessary, manually enable or disable the master alarm using the [control] menu.",
+    "page": 106
+  },
+  {
+    "id": "msg-139",
+    "message": "Master alarm restored",
+    "associatedWith": "Power supply",
+    "meaning": "Master alarm fault cleared. The ADC value should be 74.",
+    "possibleAction": "",
+    "page": 106
+  },
+  {
+    "id": "msg-140",
+    "message": "Master polling/not polling at card x",
+    "associatedWith": "MCC / MCB",
+    "meaning": "PC or SRI (service request interface) is not handshaking with the control panel",
+    "possibleAction": "Check the wiring",
+    "page": 106
+  },
+  {
+    "id": "msg-141",
+    "message": "Master Sector Actioned",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "Master sector has been switched ON/OFF.",
+    "possibleAction": "-",
+    "page": 106
+  },
+  {
+    "id": "msg-142",
+    "message": "Master Sector Enabled/Disabled",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "Master sector has been enabled or disabled manually or automatically.",
+    "possibleAction": "If necessary manually enable or disable the master sector.",
+    "page": 106
+  },
+  {
+    "id": "msg-143",
+    "message": "Memory corrupt number x loop y",
+    "associatedWith": "Device",
+    "meaning": "FLASH checksum failure",
+    "possibleAction": "Replace the device",
+    "page": 106
+  },
+  {
+    "id": "msg-144",
+    "message": "Message discarded",
+    "associatedWith": "Network Card LPC (loop processor card)",
+    "meaning": "Message received that couldn’t be routed or understood.",
+    "possibleAction": "Check the location displayed, try resetting card.",
+    "page": 106
+  },
+  {
+    "id": "msg-145",
+    "message": "Neighbour ACK Failed at card n",
+    "associatedWith": "-",
+    "meaning": "Repeated address",
+    "possibleAction": "Check domain addresses are unique",
+    "page": 106
+  },
+  {
+    "id": "msg-146",
+    "message": "Neighbour ACK Invalid at card n",
+    "associatedWith": "TBA",
+    "meaning": "TBA",
+    "possibleAction": "TBA",
+    "page": 106
+  },
+  {
+    "id": "msg-147",
+    "message": "Network initialised at card x",
+    "associatedWith": "Network Card",
+    "meaning": "Successful network map with polled panels.",
+    "possibleAction": "-",
+    "page": 106
+  },
+  {
+    "id": "msg-148",
+    "message": "Network Insecure / Secure at card x",
+    "associatedWith": "Network Card",
+    "meaning": "There are 3 missing replies in a row on End-2 of the controller.",
+    "possibleAction": "Check the wiring. Check the error rate.",
+    "page": 106
+  },
+  {
+    "id": "msg-149",
+    "message": "Network starting at card x",
+    "associatedWith": "Network Card",
+    "meaning": "Communication starting with other connected panels.",
+    "possibleAction": "-",
+    "page": 106
+  },
+  {
+    "id": "msg-150",
+    "message": "Network wiring fault at card x",
+    "associatedWith": "Network Card",
+    "meaning": "Wiring is presumed to be OC between panel n and panel n.",
+    "possibleAction": "Check the wiring.",
+    "page": 106
+  },
+  {
+    "id": "msg-151",
+    "message": "New address n at card x",
+    "associatedWith": "MCC / MCB Network Card",
+    "meaning": "The new address set has been read.",
+    "possibleAction": "-",
+    "page": 106
+  },
+  {
+    "id": "msg-152",
+    "message": "New domain address n at card x",
+    "associatedWith": "Network Card",
+    "meaning": "The new address set been read at the particular card.",
+    "possibleAction": "-",
+    "page": 107
+  },
+  {
+    "id": "msg-153",
+    "message": "NMI’s missed at card x",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Software error.",
+    "possibleAction": "Software errors will activate a system reset. Ignore single occurrence. Record the event in the log book.",
+    "page": 107
+  },
+  {
+    "id": "msg-154",
+    "message": "No periodic interrupts at card x",
+    "associatedWith": "Any Card",
+    "meaning": "Problem with software, the watchdog will operate the MCC / MCB (main control card/board).",
+    "possibleAction": "Software error will activate a system reset. Ignore single occurrence. Record event in the log book.",
+    "page": 107
+  },
+  {
+    "id": "msg-155",
+    "message": "No response number x loop y",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "There is no communication with repeat or mimic panel software.",
+    "possibleAction": "Power-up the repeat or mimic panel.",
+    "page": 107
+  },
+  {
+    "id": "msg-156",
+    "message": "No room on NVM card",
+    "associatedWith": "NVM (non volatile memory) on backplane or MCB",
+    "meaning": "User attempts to backup or save to an NVM that does not have enough free space",
+    "possibleAction": "If there is no memory left then the card 14 located on the Backplane or on MCB (Card 0) needs to be initialised",
+    "page": 107
+  },
+  {
+    "id": "msg-157",
+    "message": "Node double allocated at card x",
+    "associatedWith": "Network Card",
+    "meaning": "Two network cards have same address.",
+    "possibleAction": "Keep address unique.",
+    "page": 107
+  },
+  {
+    "id": "msg-158",
+    "message": "Node found at card x",
+    "associatedWith": "Network Card",
+    "meaning": "Another panel on the network acknowledged.",
+    "possibleAction": "-",
+    "page": 107
+  },
+  {
+    "id": "msg-159",
+    "message": "Node lost/restored at card x",
+    "associatedWith": "Network Card",
+    "meaning": "There have been 15 missing replies from another panel.",
+    "possibleAction": "Check the wiring or check and reset the panel Network card to restore.",
+    "page": 107
+  },
+  {
+    "id": "msg-160",
+    "message": "Not enough RAM at card x",
+    "associatedWith": "Any Card",
+    "meaning": "Not enough memory.",
+    "possibleAction": "Reset the card and ignore single occurrence. If necessary replace the card or add RAM, where applicable.",
+    "page": 107
+  },
+  {
+    "id": "msg-161",
+    "message": "Nothing found at card x",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "No devices found on End 1 or End 2.",
+    "possibleAction": "Check wiring of loop circuit.",
+    "page": 107
+  },
+  {
+    "id": "msg-162",
+    "message": "NVM initialised",
+    "associatedWith": "NVM (non volatile memory)on backplane or MCB",
+    "meaning": "Memory available verified.",
+    "possibleAction": "-",
+    "page": 107
+  },
+  {
+    "id": "msg-163",
+    "message": "NVM is not write protected",
+    "associatedWith": "NVM (non volatile memory)on backplane or MCB",
+    "meaning": "Read and write is possible to the memory card.",
+    "possibleAction": "Enable protect if required using the [set up] menu.",
+    "page": 107
+  },
+  {
+    "id": "msg-164",
+    "message": "NVM is read only",
+    "associatedWith": "NVM (non volatile memory)on backplane or MCB",
+    "meaning": "User attempts to write to a hardware write protected NVM",
+    "possibleAction": "Remove the hardware write protect before writing",
+    "page": 108
+  },
+  {
+    "id": "msg-165",
+    "message": "Panel in/out of commissioning mode",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "Commissioning mode switched ON/OFF.",
+    "possibleAction": "To manually switch commissioning mode use the [test/eng] menu.",
+    "page": 108
+  },
+  {
+    "id": "msg-166",
+    "message": "Panel Label Set up",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "Panel label has been set from the menu.",
+    "possibleAction": "-",
+    "page": 108
+  },
+  {
+    "id": "msg-167",
+    "message": "Panel powerup",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "Software reset of system or there has been a manual reset of card 0.",
+    "possibleAction": "If an automatic reset has occurred then check for system errors.",
+    "page": 108
+  },
+  {
+    "id": "msg-168",
+    "message": "Pattern number x on loop y channel x",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Sensor has detected an interesting event eg fire/fault.",
+    "possibleAction": "-",
+    "page": 108
+  },
+  {
+    "id": "msg-169",
+    "message": "Pointer corrupted at card x",
+    "associatedWith": "Any Card",
+    "meaning": "Software error.",
+    "possibleAction": "Software errors will activate a system reset. Ignore single occurrence. Record the event in the log book.",
+    "page": 108
+  },
+  {
+    "id": "msg-170",
+    "message": "Pointer missing at card x",
+    "associatedWith": "Any Card",
+    "meaning": "Software error",
+    "possibleAction": "Software errors will cause a system reset. Card fault should be ignored for single occurrence. Record the event in the log book.",
+    "page": 108
+  },
+  {
+    "id": "msg-171",
+    "message": "Prefire number x on loop y channel z",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Pattern match less than a Fire.",
+    "possibleAction": "-",
+    "page": 108
+  },
+  {
+    "id": "msg-172",
+    "message": "Printer lost/fitted at card x number y on loop z",
+    "associatedWith": "MCC / MCB / DAC / MRC",
+    "meaning": "The external printer has not been seen and is ‘lost’.",
+    "possibleAction": "Check the connections to the printer. Also check for paper jam in the printer mechanism.",
+    "page": 108
+  },
+  {
+    "id": "msg-173",
+    "message": "Program memory corrupted at card x",
+    "associatedWith": "Any Card",
+    "meaning": "Checksum failure on FLASH at midnight.",
+    "possibleAction": "Clear and ignore single occurrence. Record in the log book.",
+    "page": 108
+  },
+  {
+    "id": "msg-174",
+    "message": "Program not running at card x",
+    "associatedWith": "Any Card",
+    "meaning": "Problem with software, the watchdog will operate the MCC / MCB (main control card/board).",
+    "possibleAction": "Software errors will activate an automatic system reset. Ignore for single occurrence. Record event in the log book.",
+    "page": 109
+  },
+  {
+    "id": "msg-175",
+    "message": "Program runaway at card x",
+    "associatedWith": "Any Card",
+    "meaning": "CPU has crashed.",
+    "possibleAction": "Clear and ignore single occurrence. Record in the log book.",
+    "page": 109
+  },
+  {
+    "id": "msg-176",
+    "message": "Q buffer full at card x",
+    "associatedWith": "Any Card",
+    "meaning": "Software error.",
+    "possibleAction": "Software errors will activate a system reset. Ignore single occurrence. Record the event in the log book.",
+    "page": 109
+  },
+  {
+    "id": "msg-177",
+    "message": "Q buffer number Failed at card x",
+    "associatedWith": "Any Card",
+    "meaning": "Software error.",
+    "possibleAction": "Software errors will activate a system reset. Ignore single occurrence. Record the event in the log book.",
+    "page": 109
+  },
+  {
+    "id": "msg-178",
+    "message": "Radio devices recovered",
+    "associatedWith": "LRT",
+    "meaning": "Radio LRT has completed finding all of the radio devices",
+    "possibleAction": "-",
+    "page": 109
+  },
+  {
+    "id": "msg-179",
+    "message": "Recover failed at card x",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Loop does not match with what is in NVM.",
+    "possibleAction": "Check and confirm/correct the difference and then backup.",
+    "page": 109
+  },
+  {
+    "id": "msg-180",
+    "message": "Recover succeeded at card x",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Successful recovery after a previous failure.",
+    "possibleAction": "-",
+    "page": 109
+  },
+  {
+    "id": "msg-181",
+    "message": "Replaced Device Wrong type number x on loop y",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Device is a different type.",
+    "possibleAction": "Check and confirm installation of correct type and reallocate. Back up to memory.",
+    "page": 109
+  },
+  {
+    "id": "msg-182",
+    "message": "SAFE Address not Set up number x on loop y",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "The replaced device is not SAFE addressed. The device previously installed in the location was SAFE addressed.",
+    "possibleAction": "Set up the SAFE address.",
+    "page": 109
+  },
+  {
+    "id": "msg-183",
+    "message": "Scan error number x at card y",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Invalid universal scan reply.",
+    "possibleAction": "Check loop length and screening",
+    "page": 109
+  },
+  {
+    "id": "msg-184",
+    "message": "Sector actioned",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Sector is switched ON/OFF.",
+    "possibleAction": "-",
+    "page": 110
+  },
+  {
+    "id": "msg-185",
+    "message": "Sector enabled/ disabled at card x",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "The sector(s) has been enabled or disabled automatically or manually.",
+    "possibleAction": "If necessary, manually enable/disable the sector using the [control] menu.",
+    "page": 110
+  },
+  {
+    "id": "msg-186",
+    "message": "Seeking radio devices",
+    "associatedWith": "LRT",
+    "meaning": "Radio LRT is finding all of the radio devices",
+    "possibleAction": "-",
+    "page": 110
+  },
+  {
+    "id": "msg-187",
+    "message": "Sensor faulty",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Wireless system - sensor head needs cleaning or sensor head lost from a wireless base (wireless adaptor) Also mean - Fault pattern has been matched.",
+    "possibleAction": "Check and replace the sensor if necessary.",
+    "page": 110
+  },
+  {
+    "id": "msg-188",
+    "message": "Sensor out of specification number x on Loop y channel z",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Fault pattern has been matched.",
+    "possibleAction": "Check and replace the sensor if necessary.",
+    "page": 110
+  },
+  {
+    "id": "msg-189",
+    "message": "Sensor restored",
+    "associatedWith": "Radio (Plexus) Device",
+    "meaning": "A Radio (Plexus) Device head has been restored.",
+    "possibleAction": "-",
+    "page": 110
+  },
+  {
+    "id": "msg-190",
+    "message": "Shared memory hardware is faulty at card x",
+    "associatedWith": "Any Card",
+    "meaning": "There is MCC / MCB problem.",
+    "possibleAction": "Replace all other cards first other than the MCC/MCB to see if the problem is resolved. If it persists then replace MCC / MCB.",
+    "page": 110
+  },
+  {
+    "id": "msg-191",
+    "message": "Slave Device Replaced number x on loop y",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Slave type device has been replaced.",
+    "possibleAction": "-",
+    "page": 110
+  },
+  {
+    "id": "msg-192",
+    "message": "Slave micro failed at card x",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Loop driver is watchdogged by loop processor.",
+    "possibleAction": "Reset and ignore single occurrence. Record in the log book.",
+    "page": 110
+  },
+  {
+    "id": "msg-193",
+    "message": "Software errors",
+    "associatedWith": "Software errors will activate a system reset",
+    "meaning": "Software error",
+    "possibleAction": "Software errors will activate a system reset. Ignore single occurrence. Record the event in the log book.",
+    "page": 110
+  },
+  {
+    "id": "msg-194",
+    "message": "Sounder circuit failed",
+    "associatedWith": "Device",
+    "meaning": "There is a fault with the sounder hardware on the S-Cubed or S-Quad.",
+    "possibleAction": "Replace the device",
+    "page": 110
+  },
+  {
+    "id": "msg-195",
+    "message": "Sounder circuit Restored",
+    "associatedWith": "Device",
+    "meaning": "The fault is on the sounder circuit associated with S-Quad or S-Cubed has been restored.",
+    "possibleAction": "-",
+    "page": 110
+  },
+  {
+    "id": "msg-196",
+    "message": "Speech circuit has failed",
+    "associatedWith": "Device",
+    "meaning": "There is a hardware fault possibly associated with the voice chip on the speech S-Cubed or S-Quad",
+    "possibleAction": "Replace the device",
+    "page": 111
+  },
+  {
+    "id": "msg-197",
+    "message": "Speech circuit Restored",
+    "associatedWith": "Device",
+    "meaning": "The fault on the speech S-Quad and S-Cubed has been restored.",
+    "possibleAction": "-",
+    "page": 111
+  },
+  {
+    "id": "msg-198",
+    "message": "Spurious acknowledgment at card x",
+    "associatedWith": "Any Card",
+    "meaning": "Software error.",
+    "possibleAction": "Software errors will activate a system reset. Ignore single occurrence. Record the event in the log book.",
+    "page": 111
+  },
+  {
+    "id": "msg-199",
+    "message": "Spurious FAB number x on loop y",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Device has FAB but shouldn’t have any.",
+    "possibleAction": "Ignore single occurrence as the panel will remove the indication.",
+    "page": 111
+  },
+  {
+    "id": "msg-200",
+    "message": "Stack overflow at card x",
+    "associatedWith": "Any Card",
+    "meaning": "Software error",
+    "possibleAction": "Software errors will activate a system reset Ignore single occurrence. Record the event in the log book",
+    "page": 111
+  },
+  {
+    "id": "msg-201",
+    "message": "Stack too deep at card x",
+    "associatedWith": "Any Card",
+    "meaning": "Software error.",
+    "possibleAction": "Software errors will activate a system reset. Ignore single occurrence. Record the event in the log book.",
+    "page": 111
+  },
+  {
+    "id": "msg-202",
+    "message": "Strobe circuit has failed",
+    "associatedWith": "Device",
+    "meaning": "The strobe circuit in the S-Quad or S-Cubed device has failed.",
+    "possibleAction": "Replace the device",
+    "page": 111
+  },
+  {
+    "id": "msg-203",
+    "message": "Strobe circuit restored",
+    "associatedWith": "Device",
+    "meaning": "The strobe hardware fault, such as internal connection, in the S-Cubed or S-Quad has been restored",
+    "possibleAction": "-",
+    "page": 111
+  },
+  {
+    "id": "msg-204",
+    "message": "Sub Faults",
+    "associatedWith": "",
+    "meaning": "",
+    "possibleAction": "See exceptions",
+    "page": 111
+  },
+  {
+    "id": "msg-205",
+    "message": "Superfire number x on loop y channel z",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Pattern match is equal to or greater than a Fire.",
+    "possibleAction": "-",
+    "page": 111
+  },
+  {
+    "id": "msg-206",
+    "message": "Supply totally Failed",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "The message does not normally appear.",
+    "possibleAction": "-",
+    "page": 111
+  },
+  {
+    "id": "msg-207",
+    "message": "Switching inhibited at end 1 at card x",
+    "associatedWith": "Network",
+    "meaning": "Automatic end swapping on the network controller has been disabled for test purpose.",
+    "possibleAction": "-",
+    "page": 111
+  },
+  {
+    "id": "msg-208",
+    "message": "System Printer fitted at card x number y loop z",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "A 80 column serial printer is fitted to the panel.",
+    "possibleAction": "-",
+    "page": 112
+  },
+  {
+    "id": "msg-209",
+    "message": "System Printer Lost at card x number y on loop z",
+    "associatedWith": "MCC / MCB (Printer option)",
+    "meaning": "TBA",
+    "possibleAction": "TBA",
+    "page": 112
+  },
+  {
+    "id": "msg-210",
+    "message": "System Restarted /Started",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "Link on back plane restored.",
+    "possibleAction": "-",
+    "page": 112
+  },
+  {
+    "id": "msg-211",
+    "message": "System stopped",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "Backplane link moved causing the system to stop.",
+    "possibleAction": "The link should not be normally accessed.",
+    "page": 112
+  },
+  {
+    "id": "msg-212",
+    "message": "Task stuck at card x",
+    "associatedWith": "Any Card",
+    "meaning": "Software error.",
+    "possibleAction": "Software errors will activate a system reset. Ignore single occurrence. Record the event in the log book.",
+    "page": 112
+  },
+  {
+    "id": "msg-213",
+    "message": "Test set found / removed at card x",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Remote allocation unit has been found connected to the system.",
+    "possibleAction": "Disconnection of the test set will bring about a removed message.",
+    "page": 112
+  },
+  {
+    "id": "msg-214",
+    "message": "Too many errors number x on loop y",
+    "associatedWith": "Device",
+    "meaning": "More than 15 errors from a device in 34 hours.",
+    "possibleAction": "Check the loop wiring to the device.",
+    "page": 112
+  },
+  {
+    "id": "msg-215",
+    "message": "Too many errors x at Card y",
+    "associatedWith": "Network Card",
+    "meaning": "Up to 6 consecutive communication errors.",
+    "possibleAction": "Check wiring and cable screen. There may be faults with the installation.",
+    "page": 112
+  },
+  {
+    "id": "msg-216",
+    "message": "Two controller at card x",
+    "associatedWith": "Network",
+    "meaning": "There are two network controllers.",
+    "possibleAction": "One network controller will automatically shut down.",
+    "page": 112
+  },
+  {
+    "id": "msg-217",
+    "message": "Two master has the same address at card x",
+    "associatedWith": "MCC / MCB / DAC",
+    "meaning": "Two PCs have been given the same address.",
+    "possibleAction": "Each PC must have a unique address.",
+    "page": 112
+  },
+  {
+    "id": "msg-218",
+    "message": "Unable to claim buffers at card x",
+    "associatedWith": "Any Card",
+    "meaning": "System too busy",
+    "possibleAction": "Wait or reset card if stuck, record in the log book",
+    "page": 112
+  },
+  {
+    "id": "msg-219",
+    "message": "Unrecoverable Tx fault number x loop y",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "More than 3 consecutive reply errors",
+    "possibleAction": "Check the device connections and replace if necessary.",
+    "page": 112
+  },
+  {
+    "id": "msg-220",
+    "message": "Voice Alarm comms failed Port 1 / Node x",
+    "associatedWith": "Panel's Serial Link",
+    "meaning": "There is a serial link wiring fault between Vigilon Plus panel 'Port 1' and DOM/Comprio. Other Vigilon Plus panels in the connected network will indicate the 'Node' number of the panel connected to DOM /Comprio.",
+    "possibleAction": "Check the serial link is working, ensure: Serail link cable is connected to DOM to socket TWI Serial link cables are connected to the two 9 way D Type connectors on the Adapter TWI-RS232 and Serail link cable is wired correctly at a Vigilon plus/Compact plus panel to terminals Tx, Rx and 0V.",
+    "page": 113
+  },
+  {
+    "id": "msg-221",
+    "message": "Voice Alarm comms failed Port 1 / Node x",
+    "associatedWith": "Panel's Serial Link",
+    "meaning": "There is a serial link wiring fault has been restored between Vigilon Plus panel 'Port 1' and DOM/Comprio. Other Vigilon Plus panels in the connected network will indicate the 'Node' number of the panel connected to DOM /Comprio.",
+    "possibleAction": "-",
+    "page": 113
+  },
+  {
+    "id": "msg-222",
+    "message": "Voice Alarm common fault Node x",
+    "associatedWith": "Connected D1 Voice Alarm system",
+    "meaning": "There is a common fault, that is any fault in D1 Voice Alarm system, for example Speaker line fault, Amplifier fault, Mains power fault, etc. The ERROR LED is lit at the DOM/Comprio connected via serial link to Vigilon Plus panel.",
+    "possibleAction": "Find the cause of common fault at a D1 Voice Alarm system: Refer to user guides for D1 Voice Alarm system modules to locate the fault. Once the fault is rectified the fault message and notice fault indications are removed at both Vigilon Plus and D1 Voice Alarm system.",
+    "page": 113
+  },
+  {
+    "id": "msg-223",
+    "message": "Voice Alarm configuration fault Nos. 17",
+    "associatedWith": "Configuration fault at a D1 Voice Alarm System",
+    "meaning": "This message and indication is given at Vigilon Plus panel of a configuration fault in a D1 Voice Alarm system. The affected output (VOP) in this case No 17 is not recognised.",
+    "possibleAction": "Test for a configuration error which occurs when a non existent or not configured properly Virtual Output Point is made active. Confirm the VOP displayed as being faulty is non existent. Rectify the configuration at Vigilon Plus and/or at the D1 Voice Alarm system. Repeat this test to ensure the revised configuration works. Check to ensure the fault has cleared.",
+    "page": 113
+  },
+  {
+    "id": "msg-224",
+    "message": "Warm restart",
+    "associatedWith": "MCC / MCB (main control card)",
+    "meaning": "The 5V rail has seen a dip activating the watchdog or the button has been pressed on MCC / MCB or panel power reconnected.",
+    "possibleAction": "-",
+    "page": 114
+  },
+  {
+    "id": "msg-225",
+    "message": "Warning cleared",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "Warning has been removed.",
+    "possibleAction": "-",
+    "page": 114
+  },
+  {
+    "id": "msg-226",
+    "message": "Wiring changed - ground break at card x number y on loop z",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "A test has shown a break on the 0V line. The test is conducted every minute.",
+    "possibleAction": "Check wiring of 0V around loop.",
+    "page": 114
+  },
+  {
+    "id": "msg-227",
+    "message": "Wiring changed - short at card x number y loop z",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Loop short circuit after the particular device.",
+    "possibleAction": "Check wiring and device after indicated device.",
+    "page": 114
+  },
+  {
+    "id": "msg-228",
+    "message": "Wiring changed - split/closed at card x number y on loop z",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "No reply received from a device at End-2 of loop.",
+    "possibleAction": "Check wiring.",
+    "page": 114
+  },
+  {
+    "id": "msg-229",
+    "message": "Wiring changed part short at card x number y on loop z",
+    "associatedWith": "LPC (loop processor card)",
+    "meaning": "Less than 80 ohms between the +ve and 0V of loop wiring.",
+    "possibleAction": "Check wiring and the device after the partially shorted device.",
+    "page": 114
+  },
+  {
+    "id": "msg-230",
+    "message": "Wrong card type at Card x",
+    "associatedWith": "Any Card",
+    "meaning": "Card in wrong slot.",
+    "possibleAction": "Move the cards to the right location.",
+    "page": 114
+  },
+  {
+    "id": "msg-231",
+    "message": "Zone enabled / disabled at card x",
+    "associatedWith": "MCC / MCB (main control card/board)",
+    "meaning": "The zone has been enabled or disabled automatically or manually.",
+    "possibleAction": "If necessary, manually enable or disable the zone using the [control] menu.",
+    "page": 114
+  }
+]

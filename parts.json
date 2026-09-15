@@ -1,0 +1,856 @@
+[
+  {
+    "id": "COMPACTPLUS-24",
+    "code": "COMPACTPLUS-24",
+    "name": "Compact Plus panel, supplied with one loop card",
+    "category": "Panels and cards",
+    "pages": [
+      4
+    ]
+  },
+  {
+    "id": "COMPACT LPC-EN",
+    "code": "COMPACT LPC-EN",
+    "name": "Additional Compact loop card",
+    "category": "Panels and cards",
+    "pages": [
+      4
+    ]
+  },
+  {
+    "id": "COMPACT-NC",
+    "code": "COMPACT-NC",
+    "name": "Compact network card",
+    "category": "Panels and cards",
+    "pages": [
+      4,
+      7
+    ]
+  },
+  {
+    "id": "PRINTER-HAND",
+    "code": "PRINTER-HAND",
+    "name": "Hand or wall mounted printer",
+    "category": "Panels and cards",
+    "pages": [
+      4
+    ]
+  },
+  {
+    "id": "COMPACT-FLUSH",
+    "code": "COMPACT-FLUSH",
+    "name": "Compact flush surround",
+    "category": "Panels and cards",
+    "pages": [
+      4
+    ]
+  },
+  {
+    "id": "VIGPLUS-24-NP",
+    "code": "VIGPLUS-24-NP",
+    "name": "Vigilon 1 to 4 loop panel, one loop card, no printer",
+    "category": "Panels and cards",
+    "pages": [
+      4
+    ]
+  },
+  {
+    "id": "VIGPLUS-24",
+    "code": "VIGPLUS-24",
+    "name": "Vigilon 1 to 4 loop panel, one loop card and printer",
+    "category": "Panels and cards",
+    "pages": [
+      4
+    ]
+  },
+  {
+    "id": "VIG-LPC-EN",
+    "code": "VIG-LPC-EN",
+    "name": "Additional Vigilon loop card",
+    "category": "Panels and cards",
+    "pages": [
+      4
+    ]
+  },
+  {
+    "id": "VIG-NC",
+    "code": "VIG-NC",
+    "name": "Copper network card",
+    "category": "Panels and cards",
+    "pages": [
+      4,
+      7
+    ]
+  },
+  {
+    "id": "VIG-NC-FO",
+    "code": "VIG-NC-FO",
+    "name": "Fibre network card",
+    "category": "Panels and cards",
+    "pages": [
+      4,
+      7
+    ]
+  },
+  {
+    "id": "VIG-IOC-DOM",
+    "code": "VIG-IOC-DOM",
+    "name": "Serial input/output communications card",
+    "category": "Panels and cards",
+    "pages": [
+      4,
+      9
+    ]
+  },
+  {
+    "id": "VIG-24-FLUSH",
+    "code": "VIG-24-FLUSH",
+    "name": "Vigilon flush surround",
+    "category": "Panels and cards",
+    "pages": [
+      4,
+      5
+    ]
+  },
+  {
+    "id": "VIGPLUS-72",
+    "code": "VIGPLUS-72",
+    "name": "Vigilon Plus 1 to 6 loop panel with printer",
+    "category": "Panels and cards",
+    "pages": [
+      5,
+      7
+    ]
+  },
+  {
+    "id": "VIG-LPC",
+    "code": "VIG-LPC",
+    "name": "Additional loop card listed for VIGPLUS-72",
+    "category": "Panels and cards",
+    "pages": [
+      4,
+      5
+    ]
+  },
+  {
+    "id": "VIG-NC-DOM-FO",
+    "code": "VIG-NC-DOM-FO",
+    "name": "Fibre optic secure domain network card",
+    "category": "Panels and cards",
+    "pages": [
+      7
+    ]
+  },
+  {
+    "id": "VIG-NET-NODE",
+    "code": "VIG-NET-NODE",
+    "name": "Compact network node",
+    "category": "Panels and cards",
+    "pages": [
+      7
+    ]
+  },
+  {
+    "id": "VIG-NODE-24",
+    "code": "VIG-NODE-24",
+    "name": "Vigilon network node",
+    "category": "Panels and cards",
+    "pages": [
+      7
+    ]
+  },
+  {
+    "id": "VIGPLUS-RPT",
+    "code": "VIGPLUS-RPT",
+    "name": "Loop controlled repeat panel",
+    "category": "Repeaters and accessories",
+    "pages": [
+      8
+    ]
+  },
+  {
+    "id": "VIG-RPT-FLUSH",
+    "code": "VIG-RPT-FLUSH",
+    "name": "Repeat panel flush surround",
+    "category": "Repeaters and accessories",
+    "pages": [
+      8
+    ]
+  },
+  {
+    "id": "COMPACT-RPT",
+    "code": "COMPACT-RPT",
+    "name": "LCD non-functional repeater panel",
+    "category": "Repeaters and accessories",
+    "pages": [
+      9
+    ]
+  },
+  {
+    "id": "VIG-MIM-A3",
+    "code": "VIG-MIM-A3",
+    "name": "A3 mimic panel, mains powered and loop connected",
+    "category": "Repeaters and accessories",
+    "pages": [
+      9
+    ]
+  },
+  {
+    "id": "S4-34600",
+    "code": "S4-34600",
+    "name": "LED driver board",
+    "category": "Repeaters and accessories",
+    "pages": [
+      9
+    ]
+  },
+  {
+    "id": "S4-34494",
+    "code": "S4-34494",
+    "name": "Ribbon-to-terminal connection converter",
+    "category": "Repeaters and accessories",
+    "pages": [
+      9
+    ]
+  },
+  {
+    "id": "LDT-UK-I",
+    "code": "LDT-UK-I",
+    "name": "Loop diagnostic tool UK and Ireland",
+    "category": "Repeaters and accessories",
+    "pages": [
+      11
+    ]
+  },
+  {
+    "id": "S4-720",
+    "code": "S4-720",
+    "name": "Heat sensor",
+    "category": "Sensors",
+    "pages": [
+      11,
+      12,
+      14
+    ]
+  },
+  {
+    "id": "S4-780-S",
+    "code": "S4-780-S",
+    "name": "Heat sensor sounder",
+    "category": "Sensors",
+    "pages": [
+      13
+    ],
+    "note": "The overview uses S4-780; section 2.2 uses S4-780-S. This entry follows section 2.2."
+  },
+  {
+    "id": "S4-720-V-VAD-HPW",
+    "code": "S4-720-V-VAD-HPW",
+    "name": "Heat sensor with speech sounder and white VAD",
+    "category": "Sensors",
+    "pages": [
+      11,
+      14
+    ]
+  },
+  {
+    "id": "S4-720-V-VAD-HPR",
+    "code": "S4-720-V-VAD-HPR",
+    "name": "Heat sensor with speech sounder and red VAD",
+    "category": "Sensors",
+    "pages": [
+      11,
+      14
+    ]
+  },
+  {
+    "id": "S4-715",
+    "code": "S4-715",
+    "name": "Optical smoke sensor",
+    "category": "Sensors",
+    "pages": [
+      11,
+      15
+    ]
+  },
+  {
+    "id": "S4-710",
+    "code": "S4-710",
+    "name": "Optical heat sensor",
+    "category": "Sensors",
+    "pages": [
+      11,
+      16
+    ]
+  },
+  {
+    "id": "S4-770-S",
+    "code": "S4-770-S",
+    "name": "Optical heat sensor sounder",
+    "category": "Sensors",
+    "pages": [
+      11,
+      16
+    ]
+  },
+  {
+    "id": "S4-711",
+    "code": "S4-711",
+    "name": "Dual optical heat sensor, white body",
+    "category": "Sensors",
+    "pages": [
+      11,
+      12,
+      17,
+      19,
+      21,
+      22
+    ]
+  },
+  {
+    "id": "S4BK-711",
+    "code": "S4BK-711",
+    "name": "Dual optical heat sensor, black body",
+    "category": "Sensors",
+    "pages": [
+      11,
+      12,
+      17,
+      19,
+      22
+    ],
+    "note": "The descriptions are reversed in section 2.7 of the guide. The sensor overview identifies S4BK-711 as the black sensor; section 2.11 identifies S4BK-700 as its base."
+  },
+  {
+    "id": "S4-771-S",
+    "code": "S4-771-S",
+    "name": "Dual optical heat sensor sounder",
+    "category": "Sensors",
+    "pages": [
+      18
+    ],
+    "note": "The overview uses S4-771; section 2.8 uses S4-771-S. This entry follows section 2.8."
+  },
+  {
+    "id": "S4-711-V",
+    "code": "S4-711-V",
+    "name": "Dual optical heat sensor with speech, white body",
+    "category": "Sensors",
+    "pages": [
+      11,
+      12,
+      19,
+      21,
+      22
+    ]
+  },
+  {
+    "id": "S4BK-711-V",
+    "code": "S4BK-711-V",
+    "name": "Dual optical heat sensor with speech, black body",
+    "category": "Sensors",
+    "pages": [
+      11,
+      12,
+      19,
+      22
+    ]
+  },
+  {
+    "id": "S4-711-VAD-HPR",
+    "code": "S4-711-VAD-HPR",
+    "name": "Dual optical heat sensor with red VAD",
+    "category": "Sensors",
+    "pages": [
+      12,
+      21
+    ]
+  },
+  {
+    "id": "S4-711-VAD-HPW",
+    "code": "S4-711-VAD-HPW",
+    "name": "Dual optical heat sensor with white VAD",
+    "category": "Sensors",
+    "pages": [
+      12,
+      21
+    ]
+  },
+  {
+    "id": "S4-711-V-VAD-HPR",
+    "code": "S4-711-V-VAD-HPR",
+    "name": "Dual optical heat sensor with speech sounder and red VAD",
+    "category": "Sensors",
+    "pages": [
+      22
+    ]
+  },
+  {
+    "id": "S4-711-V-VAD-HPW",
+    "code": "S4-711-V-VAD-HPW",
+    "name": "Dual optical heat sensor with speech sounder and white VAD",
+    "category": "Sensors",
+    "pages": [
+      22
+    ]
+  },
+  {
+    "id": "S4BK-711-V-VAD-HPR",
+    "code": "S4BK-711-V-VAD-HPR",
+    "name": "Dual optical heat sensor with speech sounder and red VAD, black body",
+    "category": "Sensors",
+    "pages": [
+      12,
+      22
+    ]
+  },
+  {
+    "id": "S4-901",
+    "code": "S4-901",
+    "name": "Dual optical heat CO sensor",
+    "category": "Sensors",
+    "pages": [
+      12,
+      24
+    ]
+  },
+  {
+    "id": "S4-911-V-VAD-HPR",
+    "code": "S4-911-V-VAD-HPR",
+    "name": "Dual optical heat CO sensor with speech sounder and red VAD",
+    "category": "Sensors",
+    "pages": [
+      12,
+      25
+    ]
+  },
+  {
+    "id": "S4-911-V-VAD-HPW",
+    "code": "S4-911-V-VAD-HPW",
+    "name": "Dual optical heat CO sensor with speech sounder and white VAD",
+    "category": "Sensors",
+    "pages": [
+      12,
+      25
+    ]
+  },
+  {
+    "id": "S4-700",
+    "code": "S4-700",
+    "name": "Sensor base, white",
+    "category": "Bases and accessories",
+    "pages": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      21,
+      22,
+      24,
+      25
+    ]
+  },
+  {
+    "id": "S4BK-700",
+    "code": "S4BK-700",
+    "name": "Sensor base, black",
+    "category": "Bases and accessories",
+    "pages": [
+      17,
+      19,
+      22
+    ],
+    "note": "The descriptions are reversed in section 2.7 of the guide. The sensor overview identifies S4BK-711 as the black sensor; section 2.11 identifies S4BK-700 as its base."
+  },
+  {
+    "id": "S4-701",
+    "code": "S4-701",
+    "name": "IP21 gasket",
+    "category": "Bases and accessories",
+    "pages": [
+      12,
+      14,
+      21,
+      22,
+      25
+    ]
+  },
+  {
+    "id": "S4-705",
+    "code": "S4-705",
+    "name": "IP21 gaskets, pack of five",
+    "category": "Bases and accessories",
+    "pages": [
+      12,
+      14,
+      21,
+      22,
+      25
+    ]
+  },
+  {
+    "id": "S4-34740",
+    "code": "S4-34740",
+    "name": "Beam sensor pair",
+    "category": "Beam and duct",
+    "pages": [
+      28
+    ]
+  },
+  {
+    "id": "S4-34741-01",
+    "code": "S4-34741-01",
+    "name": "Beam angle bracket and base",
+    "category": "Beam and duct",
+    "pages": [
+      28
+    ]
+  },
+  {
+    "id": "S4-34741-03",
+    "code": "S4-34741-03",
+    "name": "Beam parallel bracket and base",
+    "category": "Beam and duct",
+    "pages": [
+      28
+    ]
+  },
+  {
+    "id": "S4-34741-99",
+    "code": "S4-34741-99",
+    "name": "Beam receiver light shield",
+    "category": "Beam and duct",
+    "pages": [
+      28
+    ]
+  },
+  {
+    "id": "S4-34760",
+    "code": "S4-34760",
+    "name": "Duct sensor housing and base, detector excluded",
+    "category": "Beam and duct",
+    "pages": [
+      12,
+      29
+    ]
+  },
+  {
+    "id": "S4-34800",
+    "code": "S4-34800",
+    "name": "Manual call point with glass",
+    "category": "Call points",
+    "pages": [
+      31
+    ]
+  },
+  {
+    "id": "S4-34842",
+    "code": "S4-34842",
+    "name": "Manual call point with glass and protective cover",
+    "category": "Call points",
+    "pages": [
+      31
+    ]
+  },
+  {
+    "id": "S4-34805",
+    "code": "S4-34805",
+    "name": "Manual call point with resettable element",
+    "category": "Call points",
+    "pages": [
+      31
+    ]
+  },
+  {
+    "id": "S4-34845",
+    "code": "S4-34845",
+    "name": "Manual call point with resettable element and protective cover",
+    "category": "Call points",
+    "pages": [
+      31
+    ]
+  },
+  {
+    "id": "S4-34805 EP",
+    "code": "S4-34805 EP",
+    "name": "IP67 manual call point with resettable element and protective cover",
+    "category": "Call points",
+    "pages": [
+      31
+    ]
+  },
+  {
+    "id": "S3-S-R",
+    "code": "S3-S-R",
+    "name": "Electronic sounder, red",
+    "category": "Sounders",
+    "pages": [
+      32
+    ]
+  },
+  {
+    "id": "S3-S-W",
+    "code": "S3-S-W",
+    "name": "Electronic sounder, white",
+    "category": "Sounders",
+    "pages": [
+      32
+    ]
+  },
+  {
+    "id": "S3-V-R",
+    "code": "S3-V-R",
+    "name": "Voice enhanced electronic sounder, red",
+    "category": "Sounders",
+    "pages": [
+      33
+    ]
+  },
+  {
+    "id": "S3-V-W",
+    "code": "S3-V-W",
+    "name": "Voice enhanced electronic sounder, white",
+    "category": "Sounders",
+    "pages": [
+      33
+    ]
+  },
+  {
+    "id": "S3-S-VAD-HPW-R",
+    "code": "S3-S-VAD-HPW-R",
+    "name": "Electronic sounder, white VAD, red body",
+    "category": "Sounders",
+    "pages": [
+      34
+    ]
+  },
+  {
+    "id": "S3-S-VAD-HPR-R",
+    "code": "S3-S-VAD-HPR-R",
+    "name": "Electronic sounder, red VAD, red body",
+    "category": "Sounders",
+    "pages": [
+      34
+    ]
+  },
+  {
+    "id": "S3-V-VAD-HPW-R",
+    "code": "S3-V-VAD-HPW-R",
+    "name": "Voice sounder, white VAD, red body",
+    "category": "Sounders",
+    "pages": [
+      34
+    ]
+  },
+  {
+    "id": "S3-V-VAD-HPR-R",
+    "code": "S3-V-VAD-HPR-R",
+    "name": "Voice sounder, red VAD, red body",
+    "category": "Sounders",
+    "pages": [
+      34
+    ]
+  },
+  {
+    "id": "S3EP-S-R",
+    "code": "S3EP-S-R",
+    "name": "IP66 sounder (variant description inconsistent in guide)",
+    "category": "Sounders",
+    "pages": [
+      35
+    ],
+    "note": "The guide has inconsistent environmental sounder variant descriptions in section 7.4. Match the full installed part code before specifying a replacement."
+  },
+  {
+    "id": "S3EP-V-VAD-HPR-R",
+    "code": "S3EP-V-VAD-HPR-R",
+    "name": "IP66 voice sounder with red VAD, red body",
+    "category": "Sounders",
+    "pages": [
+      35
+    ],
+    "note": "The guide has inconsistent environmental sounder variant descriptions in section 7.4. Match the full installed part code before specifying a replacement."
+  },
+  {
+    "id": "S3EP-V-VAD-HPW-R",
+    "code": "S3EP-V-VAD-HPW-R",
+    "name": "IP66 voice sounder with white VAD, red body",
+    "category": "Sounders",
+    "pages": [
+      35
+    ],
+    "note": "The guide has inconsistent environmental sounder variant descriptions in section 7.4. Match the full installed part code before specifying a replacement."
+  },
+  {
+    "id": "S3EP-VAD-HPR-R",
+    "code": "S3EP-VAD-HPR-R",
+    "name": "IP66 sounder with red VAD, red body",
+    "category": "Sounders",
+    "pages": [
+      35
+    ],
+    "note": "The guide has inconsistent environmental sounder variant descriptions in section 7.4. Match the full installed part code before specifying a replacement."
+  },
+  {
+    "id": "S3EP-VAD-HPW-R",
+    "code": "S3EP-VAD-HPW-R",
+    "name": "IP66 sounder with white VAD, red body",
+    "category": "Sounders",
+    "pages": [
+      35
+    ],
+    "note": "The guide has inconsistent environmental sounder variant descriptions in section 7.4. Match the full installed part code before specifying a replacement."
+  },
+  {
+    "id": "S3-CONTROL",
+    "code": "S3-CONTROL",
+    "name": "Handilink remote control for sounder commissioning",
+    "category": "Repeaters and accessories",
+    "pages": [
+      37
+    ]
+  },
+  {
+    "id": "S4-34450",
+    "code": "S4-34450",
+    "name": "Loop powered four-channel input/output interface",
+    "category": "Interfaces",
+    "pages": [
+      39
+    ]
+  },
+  {
+    "id": "S4-34410",
+    "code": "S4-34410",
+    "name": "Single-channel input unit / zone module",
+    "category": "Interfaces",
+    "pages": [
+      40,
+      44
+    ]
+  },
+  {
+    "id": "S4-34420",
+    "code": "S4-34420",
+    "name": "Single-channel input/output interface",
+    "category": "Interfaces",
+    "pages": [
+      40
+    ]
+  },
+  {
+    "id": "S4-34411",
+    "code": "S4-34411",
+    "name": "Single-channel mains switching output, DIN rail mounted",
+    "category": "Interfaces",
+    "pages": [
+      41
+    ]
+  },
+  {
+    "id": "S4-34415",
+    "code": "S4-34415",
+    "name": "Single-channel mains switching output, metal boxed",
+    "category": "Interfaces",
+    "pages": [
+      41
+    ]
+  },
+  {
+    "id": "S4-34401",
+    "code": "S4-34401",
+    "name": "Single-channel mains switching input/output interface",
+    "category": "Interfaces",
+    "pages": [
+      41
+    ]
+  },
+  {
+    "id": "S4-34404",
+    "code": "S4-34404",
+    "name": "Four-channel mains switching input/output interface",
+    "category": "Interfaces",
+    "pages": [
+      42
+    ]
+  },
+  {
+    "id": "S4-34440-02",
+    "code": "S4-34440-02",
+    "name": "2 A mains interface unit with 2.1 Ah batteries",
+    "category": "Interfaces",
+    "pages": [
+      42
+    ]
+  },
+  {
+    "id": "S4-34440-12",
+    "code": "S4-34440-12",
+    "name": "12 A mains interface unit with 12 Ah batteries",
+    "category": "Interfaces",
+    "pages": [
+      42
+    ]
+  },
+  {
+    "id": "S4-34418",
+    "code": "S4-34418",
+    "name": "Single-input key operated non-fire interface with housing and two keys",
+    "category": "Interfaces",
+    "pages": [
+      44
+    ]
+  },
+  {
+    "id": "S4-34412",
+    "code": "S4-34412",
+    "name": "12-way non-fire input unit, supplied with S4-34410",
+    "category": "Interfaces",
+    "pages": [
+      44
+    ]
+  },
+  {
+    "id": "S4-34440-ASD",
+    "code": "S4-34440-ASD",
+    "name": "FAAST aspirating system interface",
+    "category": "Interfaces",
+    "pages": [
+      45
+    ]
+  },
+  {
+    "id": "S4-34490",
+    "code": "S4-34490",
+    "name": "Large plastic interface enclosure",
+    "category": "Bases and accessories",
+    "pages": [
+      39,
+      40
+    ]
+  },
+  {
+    "id": "S4-34491",
+    "code": "S4-34491",
+    "name": "DIN rail interface mounting bracket",
+    "category": "Bases and accessories",
+    "pages": [
+      39,
+      40
+    ]
+  },
+  {
+    "id": "S4-34492",
+    "code": "S4-34492",
+    "name": "Metal interface enclosure",
+    "category": "Bases and accessories",
+    "pages": [
+      39,
+      40
+    ]
+  }
+]
